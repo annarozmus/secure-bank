@@ -1,3 +1,9 @@
-* npm install - instalacja zależności narzędziowych 
-* gulp - uruchomienie taska default z pliku gulpfile.js
+#Secure
+
+A simple website covering HTML5, Sass, jQuery.
+
+#Direct link
+
+https://annarozmus.github.io/sit-on-chair/
+
 
