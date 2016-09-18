@@ -1,0 +1,442 @@
+@import "vars";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  margin-top: 8px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  .search-btn {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+input.search {
+  width: 165px;
+  height: 32px;
+  border: 1px solid lightgray;
+  display: block;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border-radius: 0;
+  background-image: url("../images/bezpieczny-bank-loop.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.log {
+  width: 165px;
+  height: 32px;
+  border: 1px solid #50c4dd;
+  background-color: $mainBlueColor;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.log span {
+  display: flex;
+  justify-content: space-around;
+  line-height: 2;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+}
+
+.fa-search {
+  font-size: 3rem;
+  position:absolute;
+  left: 14rem;
+}
+
+.main-menu {
+  ul{
+    font-size: 1rem
+  }
+  li {
+    display: inline;
+    border-right: 1px solid lightgray;
+    font-size: 1rem;
+  }
+  a {
+    color: gray;
+    text-decoration: none;
+    margin-right: 16px;
+    text-align: center;
+    font-size:1rem;
+    margin-left: 16px;
+  }
+}
+
+a {
+  &.first-li{
+    margin-left: 28px;
+  }
+}
+
+ul.main-menu li.last-li{
+
+  border-right:none;
+}
+
+div.main-list{
+  margin-top:4rem;
+}
+
+div.twelve.columns.triangle-line {
+  margin-top:-2rem
+}
+
+.triangle-line {
+  width: 100%;
+  height: 2.5rem;
+  background-image: url(../images/pasek-trojkaty.jpg);
+  background-color: $mainBlueColor;
+  background-repeat: repeat-x;
+  background-size: 100%;
+}
+
+.banner ul {
+  list-style-type: none;
+}
+
+img.main-banner {
+  width: 100%;
+  margin-top: -2rem;
+}
+
+.banner {
+  margin-top: 1.9rem;
+}
+
+.inside-banner {
+  width: 39rem;
+  height: 20rem;
+  background-color: $mainBlueColor;
+  border-radius: $borderRadius;
+  position: absolute;
+  color: white;
+  top: 7.5rem;
+  right: 0;
+}
+
+button.smaller-button {
+  color: white;
+  background-color: black;
+  width: 19.5rem;
+  height: 4.5rem;
+  border-radius: $borderRadius;
+  margin-left: 3.5rem;
+  margin-top: 4.5rem;
+  border: 1px solid black;
+}
+
+.inside-headline span {
+  margin-top: 3.5rem;
+  margin-left: -12.5rem;
+  display: flex;
+  justify-content: space-around;
+  line-height: 2;
+}
+
+.relative {
+  position: relative;
+}
+
+.inside-text {
+  margin-top: -1rem;
+  margin-left: 3.5rem;
+  font-size: 2.4rem;
+}
+
+.credit {
+  margin-top: -4.2rem;
+
+}
+
+.loan {
+  margin-top: -4.2rem;
+}
+
+.keys img {
+  margin-top: 9rem;
+  margin-left: 2rem;
+  float: left;
+}
+
+.keys-description {
+  margin-top: 7rem;
+  line-height: 1;
+  overflow: hidden;
+  padding-left: 15px;
+  width: 180px;
+  padding-bottom: 10px;
+}
+
+span.headline {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+span.description {
+  line-height: 0;
+  font-size: 1rem;
+}
+
+a.more {
+  font-size: 1.4rem;
+  margin-left: 5rem;
+  color: $mainBlueColor;
+}
+
+span.bigger {
+  font-size: 1.6rem;
+}
+
+.big-main {
+  display: flex;
+}
+
+.loan-headline {
+  margin-top: 7rem;
+  line-height: 1;
+}
+
+.ui-widget.ui-widget-content {
+  width: 33.4rem;
+  margin-top: -1.5rem;
+}
+
+#amount {
+  margin-left: 24rem;
+}
+
+#time {
+  margin-left: 18rem;
+}
+
+div.slider {
+  margin-top: -3rem;
+}
+
+a.more-info {
+  font-size: 1.4rem;
+  margin-left: 11rem;
+  color: $mainBlueColor;
+}
+
+hr {
+  margin-bottom: 2.5rem;
+}
+
+hr.line {
+  width: 33.4rem;
+  border-top: 2px solid $mainBlueColor;
+  margin-left: 0;
+
+}
+
+p.time-slider {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+div.loan {
+  padding-left: 9rem;
+}
+
+section.main-one {
+  height: 36.7rem;
+}
+
+div.background-blue {
+  background-color: $mainBlueColor;
+  height: 37.4rem;
+  border: 1px solid $mainBlueColor;
+}
+
+div {
+  &.laptop, .cloud, .percent {
+    height: 37.5rem;
+    background-color: $mainBlueColor;
+  }
+}
+
+img {
+  &.img-icon {
+    margin-top: 6rem;
+  }
+}
+
+h5 {
+  &.bigger-headline {
+    margin-top: 3rem;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 2.4rem;
+  }
+}
+
+h6 {
+  &.smaller-headline {
+    margin-top: -2rem;
+    color: white;
+  }
+}
+
+button {
+  &.bigger-button {
+    width: 24rem;
+    height: 5rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 1.5rem;
+  }
+}
+
+div.background-white {
+  height: 33.5rem;
+}
+
+section.main-offer div.four {
+  text-align: center;
+}
+
+div.row.background-white {
+  text-align: center;
+  padding-top: 3.5rem;
+}
+
+ul {
+  &.list-offer {
+    line-height: 1.5;
+    text-align: left;
+    list-style-type: square;
+    padding-left: 11rem;
+    color: gray;
+    margin-top: -1rem;
+  }
+  &.individuals {
+    margin-left: -6.5rem;
+  }
+  &.premium {
+    margin-left: -5.5rem;
+  }
+  &.companies {
+    margin-left: -6rem;
+  }
+}
+
+h6 {
+  &.headline-offer {
+    color: gray;
+  }
+  &.headline-individuals{
+    margin-left: -10rem;
+
+  }
+  &.headline-premium {
+    margin-left: -10rem;
+
+  }
+  &.headline-companies{
+    margin-left: -7rem;
+  }
+}
+
+footer {
+  color:gray;
+  font-size: 1.1rem;
+  ul {
+    list-style-type: none;
+    margin-top: 16px;
+  }
+  li{
+    border-right: 1px solid lightgray;
+    margin-right:8px;
+    display: inline;
+  }
+  a{
+    margin-right: 8px;
+    color:gray;
+    text-decoration: none;
+  }
+}
+
+ul.footer-menu li.last-li-footer {
+  margin-right: 0;
+  border-right: none;
+}
+
+footer div.four {
+  padding-left: 60px;
+}
+
+div.repayment {
+  color: black;
+  width: 100px;
+  float: left;
+}
+span.repayment-blue{
+  color: $mainBlueColor;
+  font-weight: 600;
+}
+
+#slider-time, #slider-amount {
+  height: 20px;
+  border:1px solid lightgrey;
+}
+
+span.ui-slider-handle.ui-corner-all.ui-state-default {
+  height: 36px;
+  width: 60px;
+  border: 1px solid $mainBlueColor;
+  border-radius: $borderRadius;
+  top: -0.5em;
+  background-image: url("../images/BezpiecznyBank-slider-element.png");
+  background-position: center;
+  background-color: $mainBlueColor;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1200px) {
+  h5.bigger-headline {
+    font-size: 2rem;
+  }
+  footer div.four {
+    padding-left: 3rem;
+  }
+}
+
+span.amount {
+  display: block;
+}
+
+
+ul.list-offer li a {
+  text-decoration: none;
+  color: grey;
+}
+
+span.bigger a {
+  text-decoration: none;
+  color:grey;
+}

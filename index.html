@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="libs/css/normalize.css">
+    <link rel="stylesheet" href="libs/css/skeleton.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="libs/js/jquery.min.js" defer></script>
+    <script src="libs/jquery-ui/jquery-ui.min.js" defer></script>
+    <script src="main.js" type="text/javascript" defer></script>
+
+    <title>Secure Bank</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="eight columns"><img src="images/Logo.svg"></div>
+                <div class="four columns wrap">
+                    <input type="search" placeholder="Szukaj" class="search">
+                    <button class="log"><span class="log-in">Zaloguj</span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="menu">
+        <div class="container">
+            <div class="row main-list">
+                <div class="ten columns">
+                    <ul class="main-menu">
+                        <li><a class="first-li" href="#">Klienci indywidualni</a></li>
+                        <li><a href="#">Przedsiębiorcy</a></li>
+                        <li><a href="#">Firmy i samorządy</a></li>
+                        <li><a href="#">Rolnicy</a></li>
+                        <li><a href="#">Korporacje</a></li>
+                        <li class="last-li"><a href="#">Uczniowie, studenci</a></li>
+                    </ul>
+                </div>
+                <div class="two columns"><span class="bigger"><a href="#">Bezpieczny bank</a></span></div>
+            </div>
+            <div class="row">
+                <div class="twelve columns triangle-line">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="container relative">
+            <div class="row">
+                <ul>
+                    <li><img src="./images/baner.jpg" class="main-banner"></li>
+                </ul>
+            </div>
+            <div class="inside-banner">
+                <div class="inside-headline"><span>Skorzystaj ze specjalnej ofery</span></div>
+                <div class="inside-text">PODRÓŻUJ BEZ OBAW</div>
+                <button class="smaller-button">Sprawdź</button>
+            </div>
+        </div>
+    </section>
+    <section class="main-one">
+        <div class="container">
+            <div class="row">
+                <div class="six columns credit">
+                    <div class="keys"><img src="./images/keys.jpg"></div>
+                    <div class="keys-description">
+                        <span class="headline">Kredyt hipoteczny</span><br>
+                        <span class="description">Gumbo beet greens corn soko endive gumbo gourd.
+                    Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+                    Celery quandong swiss chard chicory earthnut pea potato. Gumbo beet greens corn soko endive gumbo gourd.</span><br><br>
+                        <a href="#" class="more">Dowiedz się więcej</a>
+                    </div>
+                </div>
+                <div class="six columns loan">
+                    <span class="headline loan-headline">Pożyczka gotówkowa</span><br>
+                    <div class="slider">
+                        <p>
+                        <span>Kwota</span>
+                        <span id="amount"></span>
+                        </p>
+                        <div id="slider-amount"></div>
+                        <p class="time-slider">
+                            <span>Czas trwania(m-ce)</span>
+                            <span id="time"></span>
+                        </p>
+                        <div id="slider-time"></div>
+                        <hr class="line">
+                        <div class="repayment">Rata:
+                            <span class="repayment-blue">&nbsp;</span>
+                        </div>
+                        <a href="#" class="more-info">Dowiedz się więcej</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-offer">
+        <div class="container">
+            <div class="row background-blue">
+                <div class="four columns laptop">
+                    <img class="img-icon" src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABHCAQAAABSOIo9AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfgBxUMNSZ2UXSwAAAD40lEQVRo3u2bT2wUVRzHP2//2BZZuxgXYv2XYiEQCY0Qg716IRx6IFFTDdHEQFuJXkxoRA8euHAoJlUSqhFSLxqjiBoxRFMrRZBogpDSmJQm0NQ0pgVM6UJr292fB2p9uzPb3dlO9reT7Gcv897M/Ob7ffPm/Zl5a4QchNnEs2wjTM5DSoLhKt/wHfPuuyM5TqtmBy1s5kFCqvIB1lPP4/Twt+tecfutlH0yJuXEtHwpdWKcWt3kV8tu+UdbsQvHpdap1rhU8A2cZrV2vXFlDz3Zz4KzhtewvUzlw2tUZ2c5H+L72G6l0oxxSfFBjrPNunoj9VzObBWdBqI8Ysn/jQ5GFQ3cSxtthBfTdQzmM2AsuVMcpV9N/F3epNkq0hAmc7ezbIX04vYsV5XlwxQ3rTKX7G516cphqNLWT2hpjfr9bD4ku9IEzUAeKga0qRjQpmJAm4oBbSoGtKkY0CbwBiLLD+GBMDuYo59p/0KW9g4YNtLDYV6iMZgGUpwgwSt8yBEOspNHlx+ytFVIGOFzWqiiiSYmOM9pfudXkkExACk+pWVhO0EzzQxzlj4GuBAMA2nO8icPWzkNNPACA1ziE/qsNyIFUvpmdJIeR949bGUzsWLCld5Ais+ycm7TTwfP85X38i99FQLhCr/QZOWMsIvRYsNp9MTzfJSRjvN08cE0DKQ4tdAXC4NAHR/TGiQDMM5JQLjMXnqBGjqLtaBjIMUxIM079PMqfUCMTnYv/RKxnAwI55jkHCeAK7TzExDjXVqJB8MAJDnEgYXtIdroBWJ081RQDKQ4xA+LqSHa6QV+5obXQKXvB/7jTkZqmHb28r73Dyp6BrIZ5o1iTgv8lLJiQJt8BnSX2hSgIZTn1Hm0yVOETgP2h+4antTWTz2rrSGGyR5uOJtRYW5xeyWtTPBHMWMUn4jxOgkrPZt9R5wGZhiy3tqspZtrpNUsJFhlpVKM5Dcwybc8Z6WjrFMS76SP0fxLDeb4kQFtpTnosqp3TgPwF29xU1urC4f53mXaL+6r5l6UQe0lchmMSZdUuWk1OZrZME/wMo2sIqrcmaWZ4hon+YKU226zhDpDLWupUjcw7mx7CjMQCCLUBnhAJ4iR94gzXRaDNq8YDDNGgijdIuR9Gl1GzHIjYq3JXB7C9QJ7cEOCTb5c02D8m9TP0MkHBTUIhnV8zRp/LhthFLy/D3NhjvNMFnjsBSZ8MRAlGuE4DezyIdgK3uYB5gu4B4YtrPfhipAkaeQxNnDKl3Clp5tbRiDOfjq0tRTBRXaSvDumu1+6ZFx7wOmJO3JGtkjo/7+gPCTdMq2tygNn5BkJC8K/gnE803KdWpgAAAAASUVORK5CYII=">
+                    <h5 class="bigger-headline">Konto online</h5>
+                    <h6 class="smaller-headline">Zamów konto przez internet</h6>
+                    <button class="bigger-button">Otwórz konto</button>
+                </div>
+                <div class="four columns cloud">
+                    <img class="img-icon icon-cloud" src="images/ikona-dymek.svg">
+                    <h5 class="bigger-headline">Rozpocznij chat</h5>
+                    <h6 class="smaller-headline">Porozmawiaj z doradcą</h6>
+                    <button class="bigger-button">Zapytaj</button>
+                </div>
+                <div class="four columns percent">
+                    <img class="img-icon icon-percent" src="images/ikona-percent.png">
+                    <h5 class="bigger-headline">Kredyt gotówkowy</h5>
+                    <h6 class="smaller-headline ">Ustal ratę i datę spłaty</h6>
+                    <button class="bigger-button">Sprawdź</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="detail-offer">
+        <div class="container">
+            <div class="row background-white">
+                <div class="four columns">
+                    <h6 class="headline-offer headline-individuals">Klienci indywidualni</h6>
+                    <ul class="list-offer individuals">
+                        <li><a href="#">Konta</a></li>
+                        <li><a href="#">Oszczędności</a></li>
+                        <li><a href="#">Kredyty</a></li>
+                        <li><a href="#">Karty</a></li>
+                        <li><a href="#">Ubezpieczenia</a></li>
+                        <li><a href="#">Inwestycje</a></li>
+                        <li><a href="#">Programy</a></li>
+                        <li><a href="#">Bankowość elektroniczna</a></li>
+                    </ul>
+                </div>
+                <div class="four columns">
+                    <h6 class="headline-offer headline-premium">Klienci VIP Premium</h6>
+                    <ul class="list-offer premium">
+                        <li><a href="#">Konta</a></li>
+                        <li><a href="#">Lokaty i inwestycje</a></li>
+                        <li><a href="#">Kredyty</a></li>
+                        <li><a href="#">Karty</a></li>
+                        <li><a href="#">Ubezpieczenia inwestycyjne</a></li>
+                        <li><a href="#">Inwestycje</a></li>
+                        <li><a href="#">Programy</a></li>
+                        <li><a href="#">Program VIP Premium</a></li>
+                    </ul>
+                </div>
+                <div class="four columns">
+                    <h6 class="headline-offer headline-companies">Małe firmy i korporacje</h6>
+                    <ul class="list-offer companies">
+                        <li><a href="#">Mapa serwisu</a></li>
+                        <li><a href="#">Oszczędności</a></li>
+                        <li><a href="#">Kredyty</a></li>
+                        <li><a href="#">Transakcje walutowe</a></li>
+                        <li><a href="#">Gwarancje bankowe</a></li>
+                        <li><a href="#">Terminale płatnicze</a></li>
+                        <li><a href="#">Faktoring</a></li>
+                        <li><a href="#">Bankowość elektroniczna</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="eight columns"> 801 222 222 <br>
+                    © 2015 BB Bezpieczny Bank S.A. Wszelkie prawa zastrzeżone. Korzystanie z serwisu oznacza akceptację
+                    regulaminu
+                </div>
+                <div class="four columns">
+                    <ul class="footer-menu">
+                        <li><a href="#">Mapa serwisu</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li class="last-li-footer"><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
