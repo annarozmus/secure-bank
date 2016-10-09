@@ -2,7 +2,7 @@
 
 A simple website covering HTML5, Sass, jQuery.
 
-#Direct link
+**Direct link:**
 
 https://annarozmus.github.io/secure-bank/
 
